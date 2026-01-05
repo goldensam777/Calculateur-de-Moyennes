@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de Moyenne</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Calculateur de Moyenne</h1>
+            <p>Calculez rapidement votre moyenne pondérée</p>
+        </header>
+
+        <main>
+            <!-- Section Matières -->
+            <section class="matieres-section">
+                <h2>Matières</h2>
+                <div id="matieres-list" class="matieres-list">
+                    <!-- Les matières seront ajoutées ici par JavaScript -->
+                </div>
+                <button id="btn-ajouter" class="btn btn-secondary">+ Ajouter une matière</button>
+            </section>
+
+            <!-- Section Boutons -->
+            <section class="buttons-section">
+                <button id="btn-calculer" class="btn btn-primary">Calculer la moyenne</button>
+                <button id="btn-reset" class="btn btn-secondary">Réinitialiser</button>
+            </section>
+
+            <!-- Section Résultats -->
+            <section id="resultats" class="resultats-section" style="display: none;">
+                <h2>Résultats</h2>
+                <div id="resultats-content"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Made with ❤️ by Sam | <a href="https://github.com/goldensam777/Calculateur-de-Moyennes">GitHub</a></p>
+        </footer>
+    </div>
+
+    <!-- Modal pour ajouter une matière -->
+    <div id="modal-ajouter" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Ajouter une matière</h2>
+            <form id="form-matiere">
+                <div class="form-group">
+                    <label for="nom-matiere">Nom de la matière</label>
+                    <input type="text" id="nom-matiere" required>
+                </div>
+                <div class="form-group">
+                    <label for="coeff-matiere">Coefficient</label>
+                    <input type="number" id="coeff-matiere" min="0.5" max="10" step="0.5" value="1">
+                </div>
+                <div class="modal-buttons">
+                    <button type="button" class="btn btn-secondary" id="btn-annuler">Annuler</button>
+                    <button type="submit" class="btn btn-primary">Ajouter</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

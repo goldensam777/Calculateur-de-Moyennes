@@ -1,3 +1,13 @@
-# Aucune dépendance externe requise
+# Dépendances pour Tkinter (version desktop classique)
 # Tkinter est inclus avec Python 3.6+
-# Ce projet utilise uniquement la bibliothèque standard Python
+
+# Dépendances pour version Web (Flask)
+Flask==2.3.0
+Werkzeug==2.3.0
+
+# Dépendances pour version Mobile (Kivy)
+Kivy==2.2.0
+Kivy-Garden==0.1.5
+
+# Optionnel : pour générer des PDF à partir de la version web
+reportlab==4.0.4
