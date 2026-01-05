@@ -1,10 +1,10 @@
 import tkinter as tk
 from tkinter import messagebox
 from typing import List
-from CM.models.matiere import Matiere
-from CM.views.main_window import MainWindow
-from CM.views.matieres_frame import MatieresFrame
-from CM.utils.calculs import calculer_moyenne, calculer_moyenne_generale
+from models.matiere import Matiere
+from views.main_window import MainWindow
+from views.matieres_frame import MatieresFrame
+from utils.calculs import calculer_moyenne, calculer_moyenne_generale
 
 class CalculateurMoyenneController:
     """

@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 from typing import List, Callable
-from CM.models.matiere import Matiere
+from models.matiere import Matiere
 
 class MainWindow:
     """

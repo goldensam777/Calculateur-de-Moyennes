@@ -1,8 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
 from typing import List, Callable, Optional
-from CM.models.matiere import Matiere
-from CM.utils.validators import valider_note, formater_note
+from models.matiere import Matiere
+from utils.validators import valider_note, formater_note
 
 class MatieresFrame(ttk.Frame):
     """

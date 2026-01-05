@@ -1,5 +1,5 @@
 from typing import List
-from CM.models.matiere import Matiere
+from models.matiere import Matiere
 
 def calculer_moyenne(matieres: List[Matiere]) -> float:
     """
