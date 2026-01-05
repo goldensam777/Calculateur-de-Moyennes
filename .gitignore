@@ -136,3 +136,5 @@ Thumbs.db
 # Application specific
 *.ico
 .*.sw[op]
+profils.db
+*.db
